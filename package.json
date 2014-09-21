@@ -1,7 +1,7 @@
 {
   "name": "powerset-stream",
   "description": "Streams all the possible combinations of subsets of the set given in input",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/mariocasciaro/powerset-stream",
   "author": {
     "name": "Mario Casciaro"

@@ -17,13 +17,7 @@ describe('powersetStream', function() {
   
   it('should generate the powerset of a simple set (string)', function(done) {
     var results = [];
-    var expected = [['a'],
-      [ 'b' ],
-      [ 'c' ],
-      [ 'a', 'b' ],
-      [ 'a', 'c' ],
-      [ 'b', 'c' ],
-      [ 'a', 'b', 'c' ]];
+    var expected = ['a','b','c','ab','ac', 'bc', 'abc'];
     
     powersetStream('abc')
       .on('data', function(comb) {

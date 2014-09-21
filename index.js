@@ -4,7 +4,8 @@ var from = require('from2');
 //but it would complicate implementation a lot
 //better algorithms are welcome
 module.exports = function(inputSet) {
-  if(!Array.isArray(inputSet) && typeof inputSet !== 'string') {
+  var isString = typeof inputSet === 'string';
+  if(!Array.isArray(inputSet) && !isString) {
     throw new Error('Input must be an array or string');
   }
   
@@ -32,7 +33,8 @@ module.exports = function(inputSet) {
   return from.obj(function(size, next) {
     var self = this;
     generateCombinationsDeferred(inputSet, [], function(comb) {
-      self.push(comb);
+      if(comb === null) return self.push(null);
+      self.push(isString ? comb.join('') : comb);
     });
   });
 }
