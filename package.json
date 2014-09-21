@@ -1,0 +1,37 @@
+{
+  "name": "powerset-stream",
+  "description": "Streams all the possible combinations of subsets of the set given in input",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mariocasciaro/powerset-stream",
+  "author": {
+    "name": "Mario Casciaro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mariocasciaro/powerset-stream"
+  },
+  "bugs": {
+    "url": "https://github.com/mariocasciaro/powerset-stream/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mariocasciaro/powerset-stream/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "from2": "~1.2.0"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "mocha": "~1.21.4"
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/_mocha test.js --reporter spec"
+  },
+  "keywords": [
+    "powerset",
+    "stream",
+    "combinations"
+  ]
+}
